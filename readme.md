@@ -17,7 +17,7 @@ Martini Designer Online enables fast, browser-based development within a preconf
 
 3. **Create a new Codespace (from the GitHub web interface)**  
    - Go to your repository page in GitHub.  
-   - In the left sidebar, click **Codespaces**.  
+   - In the top-left corner of the GitHub interface, click the **menu icon** to expand the sidebar then click **Codespaces**.  
    - Click **New codespace**.  
    - Choose:
      - **Repository:** your forked or cloned repository  
