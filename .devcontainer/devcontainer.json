@@ -1,0 +1,21 @@
+{
+  "name": "Martini Designer Online",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "martini-designer-online",
+  "remoteUser": "root",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [3000, 8080, 8443],
+  "portsAttributes": {
+    "8080": {
+      "label": "Martini Designer Online",
+      "visibility": "public"
+    }
+  },
+  "env": {
+    "MARTINI_IMAGE_TAG": "${MARTINI_IMAGE_TAG:-latest}",
+    "MARTINI_LICENSE": "${MARTINI_LICENSE}"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  }
+}
