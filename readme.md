@@ -63,7 +63,6 @@ Martini Designer Online enables fast, browser-based development within a preconf
 
 - [Martini Designer Online - GitHub Codespaces Installation Guide](https://developer.lonti.com/docs/martini/installation-configuration/designer-online/self-managed/installation/github-codespaces/#notes)
 - [Martini Designer Online Self-Managed Hosting](https://developer.lonti.com/docs/martini/installation-configuration/designer-online/self-managed/) *(check for updates and advanced configuration)*
-- [Lonti Official GitHub Organization](https://github.com/Lonti)
 
 Maintained by Lonti Platform.  
 For updates or issues, refer to the [official documentation](https://developer.lontiplatform.com/).
