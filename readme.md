@@ -1,54 +1,69 @@
-# Martini Designer Online – GitHub Codespaces Template
+# Martini Designer Online – GitHub Codespaces Setup
 
-This repository provides a ready-to-use **GitHub Codespaces** setup for running **Martini Designer Online** in the cloud — no local installation required.
+This repository provides a ready-to-use **GitHub Codespaces** environment for running **Martini Designer Online** entirely in the cloud — no local installation required.
 
-Martini Designer Online enables fast, browser-based development and deployment within a pre-configured Codespaces environment.
+Martini Designer Online enables fast, browser-based development within a fully configured container environment.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Clone this repository**  
-   Click the **Code** button on this repository and select **Open with Codespaces** or **Clone** it to your own GitHub account.
+   Click the **Code** button on this repository and select **Open with Codespaces**,  
+   or clone it to your own GitHub account.
 
 2. **Open in Codespaces**  
-   After creating your repo, click **Code → Open with Codespaces** to launch a new development environment.
+   Launch a new Codespace for this repository.  
+   GitHub will automatically initialize the environment using the included `.devcontainer` configuration.
 
-3. **Wait for setup**  
-   GitHub Codespaces automatically builds the environment using the included `.devcontainer` configuration and Docker Compose file.  
-   This process installs dependencies and prepares Martini Designer Online for use.
+3. **Set required Codespaces secrets**  
+   Before starting Martini Designer Online, make sure you define the following **Codespaces Secrets** under your GitHub account or organization:
 
-4. **Run Martini Designer Online**  
-   Once the Codespace starts, open the **Ports** tab and locate port `3000`.  
-   Click **Open in Browser** to access the Martini Designer Online interface.
+   | Secret Name | Description |
+   |--------------|-------------|
+   | `MARTINI_LICENSE` | Your valid Martini Designer license key (required for activation). |
+   | `MARTINI_IMAGE_TAG` | *(Optional)* Martini Designer image tag to use (e.g. `latest`, `1.0.5`). Defaults to `latest`. |
+
+   **To add them:**  
+   - Go to your repository → **Settings → Secrets and variables → Codespaces → New secret**  
+   - Enter each name and its value, then save.  
+   - Codespaces will inject them automatically into the container environment.
+
+4. **Wait for setup**  
+   Codespaces builds the environment, pulls the Martini Designer Docker image, and starts the container using Docker Compose.
+
+5. **Access Martini Designer Online**  
+   Once setup completes, open the **Ports** tab and locate **port 3000**.  
+   Click **Open in Browser** to launch the Martini Designer Online interface.
 
 ---
 
-## ⚙️ Configuration Overview
+## Configuration Overview
 
 | File | Purpose |
 |------|----------|
-| `.devcontainer/devcontainer.json` | Defines the Codespaces environment and port configuration |
-| `.devcontainer/docker-compose.yml` | Runs Martini Designer Online inside a Docker container |
-| `workspace/` | Optional persistent workspace for saving projects |
+| `.devcontainer/devcontainer.json` | Defines the Codespaces configuration, ports, and environment variables. |
+| `.devcontainer/docker-compose.yml` | Runs the Martini Designer container and mounts the workspace volume. |
+| `workspace/` | Optional folder for storing your Martini projects persistently. |
 
 ---
 
-## 🧠 Notes & Considerations
+## Notes & Best Practices
 
-- **Machine size:** Choose a Codespaces machine size that fits your workload.
-- **Session limits:** Idle Codespaces stop automatically after a timeout.
-- **Network stability:** A consistent internet connection ensures smoother usage.
-- **Cost control:** Shut down idle Codespaces to manage compute time efficiently.
+- **Machine size:** Adjust Codespace resources (CPU/RAM) based on your workload.  
+- **Idle timeout:** Codespaces stop automatically when inactive — save your work often.  
+- **Cost control:** Shut down unused Codespaces to manage compute usage.  
+- **Network stability:** A reliable connection improves performance and build times.
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
-- [GitHub Codespaces Quickstart Guide](https://docs.github.com/en/codespaces/getting-started/quickstart)
+- [Martini Designer Online – GitHub Codespaces Installation Guide](https://developer.lonti.com/docs/martini/installation-configuration/designer-online/self-managed/installation/github-codespaces/#notes)
 - [Martini Designer Online Self-Managed Hosting](https://developer.lonti.com/docs/martini/installation-configuration/designer-online/self-managed/) *(check for updates and advanced configuration)*
+- [Lonti Official GitHub Organization](https://github.com/lontiplatform)
 
 ---
 
-**Maintained by Lonti Platform.**  
-For updates or issues, visit the [official Lonti GitHub organization](https://github.com/Lonti).
+**Maintained by Lonti Platform**  
+For updates or issues, check the [official documentation](https://developer.lonti.com/).
