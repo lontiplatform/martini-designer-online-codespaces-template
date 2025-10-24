@@ -1,15 +1,15 @@
-# Martini Designer Online - GitHub Codespaces Setup
+# Martini Designer Online Codespaces Template
 
-This repository provides a ready-to-use GitHub Codespaces environment for running Martini Designer Online entirely in the cloud, without requiring any local installation.
+This repository provides the official **Codespaces template** for running Martini Designer Online in a preconfigured GitHub Codespaces environment.  
 
-Martini Designer Online enables fast, browser-based development within a preconfigured container environment.
+It allows developers to quickly launch Martini Designer Online entirely in the cloud, without requiring any local setup.  
+All necessary container and environment configurations are included for immediate use.
 
 ## Quick Start
 
 1. **Clone the repository**  
    Visit the [Martini Designer Online Codespaces Installation Guide](https://developer.lonti.com/docs/martini/installation-configuration/designer-online/self-managed/installation/github-codespaces/#notes)  
-   and open the link to the official GitHub repository.  
-   Click **Use this template** or **Fork** to create your own copy of the repository under your GitHub account.
+   and clone this repository.
 
 2. **Push changes to your remote repository**  
    After cloning or forking, customize the configuration files in `.devcontainer` or other folders as needed.  
